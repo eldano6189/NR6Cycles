@@ -35,3 +35,12 @@ main {
   max-width: 1400px;
   height: auto;
 }
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color1);
+}
