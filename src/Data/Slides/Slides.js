@@ -1,37 +1,16 @@
 export const Slides = [
   {
     id: 1,
-    title: "This will be the catchy title",
-    desc: "Short description here",
-    img: "teamTemp.jpg",
+    title: "The hills are alive!",
+    desc: "Great actions shots from Majorca",
+    img: "pic1.jpg",
     link: "/",
   },
   {
     id: 2,
-    title: "This will be the catchy title",
-    desc: "Short description here",
-    img: "endo.jpg",
-    link: "/",
-  },
-  {
-    id: 3,
-    title: "This will be the catchy title",
-    desc: "Short description here",
-    img: "mtb.jpg",
-    link: "/",
-  },
-  {
-    id: 4,
-    title: "This will be the catchy title",
-    desc: "Short description here",
-    img: "race.jpg",
-    link: "/",
-  },
-  {
-    id: 5,
-    title: "This will be the catchy title",
-    desc: "Short description here",
-    img: "cross.jpg",
+    title: "Sunset in the saddle",
+    desc: "Saskia Tidey out and about on our 38mm front rim brake wheel",
+    img: "pic2.jpg",
     link: "/",
   },
 ];

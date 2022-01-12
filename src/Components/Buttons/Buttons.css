@@ -1,0 +1,13 @@
+.container-button {
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.4em 1.4em;
+  border: 0.1em solid var(--color4);
+  margin: 0 0.3em 0.3em 0;
+  text-decoration: none;
+  color: var(--font-color1);
+  text-align: center;
+  background-color: var(--color4);
+  font-size: clamp(1rem, 0.8vw, 2rem);
+}

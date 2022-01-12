@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Slides } from "../../../Data/Slides/Slides";
+import { Link } from "../../../Components/Buttons/Buttons";
 import "./HeroSection.css";
 
 export default function HeroSection() {
@@ -57,7 +58,7 @@ export default function HeroSection() {
                 <div className="container-slide-text">
                   <h3>{slide.title}</h3>
                   <p>{slide.desc}</p>
-                  <button>READ MORE</button>
+                  <Link href="/">READ MORE</Link>
                 </div>
               </div>
             );
