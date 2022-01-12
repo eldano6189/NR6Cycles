@@ -13,4 +13,11 @@ export const Slides = [
     img: "pic2.jpg",
     link: "/",
   },
+  {
+    id: 3,
+    title: "JRC Race day",
+    desc: "Young inspiring riders hit the track",
+    img: "pic3.jpg",
+    link: "/",
+  },
 ];
