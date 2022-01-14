@@ -1,16 +1,16 @@
 export const Storey = [
   {
-    img: "teamTemp.jpg",
+    img: "ComingSoon.jpg",
     name: "OUR PROMISE",
     link: "/",
   },
   {
-    img: "teamTemp.jpg",
+    img: "ComingSoon.jpg",
     name: "OUR PEOPLE",
     link: "/",
   },
   {
-    img: "teamTemp.jpg",
+    img: "ComingSoon.jpg",
     name: "OUR PROCESS",
     link: "/",
   },
