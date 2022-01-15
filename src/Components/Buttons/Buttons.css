@@ -10,4 +10,6 @@
   text-align: center;
   background-color: var(--color4);
   font-size: clamp(1rem, 0.8vw, 2rem);
+  text-transform: uppercase;
+  white-space: nowrap;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Slides } from "../../../Data/Slides/Slides";
-import { Link } from "../../../Components/Buttons/Buttons";
+import { ExtLink } from "../../../Components/Buttons/Buttons";
 import "./HeroSection.css";
 
 export default function HeroSection() {
@@ -58,7 +58,7 @@ export default function HeroSection() {
                 <div className="container-slide-text">
                   <h3>{slide.title}</h3>
                   <p>{slide.desc}</p>
-                  <Link href="/">READ MORE</Link>
+                  <ExtLink href="/">READ MORE</ExtLink>
                 </div>
               </div>
             );

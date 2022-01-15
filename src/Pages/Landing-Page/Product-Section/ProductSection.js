@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductSection.css";
 import { Products } from "../../../Data/Navigation/Products";
+import { Link } from "react-router-dom";
 
 export default function ProductSection() {
   return (
@@ -12,15 +13,21 @@ export default function ProductSection() {
         <ul>
           {Products.map((product) => {
             return (
-              <li key={product.name}>
-                <div className="product-image-wrapper">
-                  <img
-                    src={require(`../../../Assets/Images/Navigation/${product.img}`)}
-                    alt="wheel"
-                  />
-                </div>
-                <p>{product.name}&#8702;</p>
-              </li>
+              <Link
+                key={product.name}
+                to={product.link}
+                state={product.passInfo}
+              >
+                <li>
+                  <div className="product-image-wrapper">
+                    <img
+                      src={require(`../../../Assets/Images/Navigation/${product.img}`)}
+                      alt="wheel"
+                    />
+                  </div>
+                  <p>{product.name}&#8702;</p>
+                </li>
+              </Link>
             );
           })}
         </ul>

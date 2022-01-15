@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Products } from "../../Data/Navigation/Products";
 import { Storey } from "../../Data/Navigation/Storey";
 import { Support } from "../../Data/Navigation/Support";
@@ -53,9 +54,9 @@ export default function Header() {
       <header>
         <ul>
           <li className="container-logo">
-            <a href="/">
+            <Link to="/">
               <p>NR6CYCLES</p>
-            </a>
+            </Link>
           </li>
 
           <li className="container-nav">
@@ -93,13 +94,20 @@ export default function Header() {
         <div className="container-product-links">
           {Products.map((product) => {
             return (
-              <div className="product-link" key={product.name}>
-                <img
-                  src={require(`../../Assets/Images/Navigation/${product.img}`)}
-                  alt="wheel"
-                />
-                <p>{product.name}&#8702;</p>
-              </div>
+              <Link
+                key={product.name}
+                to={product.link}
+                state={product.passInfo}
+                onClick={clearLinkHandler}
+              >
+                <div className="product-link">
+                  <img
+                    src={require(`../../Assets/Images/Navigation/${product.img}`)}
+                    alt="wheel"
+                  />
+                  <p>{product.name}&#8702;</p>
+                </div>
+              </Link>
             );
           })}
         </div>
@@ -187,13 +195,20 @@ export default function Header() {
           </div>
           {Products.map((product) => {
             return (
-              <div className="product-link" key={product.name}>
-                <img
-                  src={require(`../../Assets/Images/Navigation/${product.img}`)}
-                  alt="wheel"
-                />
-                <p>{product.name}&#8702;</p>
-              </div>
+              <Link
+                key={product.name}
+                to={product.link}
+                state={product.passInfo}
+                onClick={navOpenHandler}
+              >
+                <div className="product-link">
+                  <img
+                    src={require(`../../Assets/Images/Navigation/${product.img}`)}
+                    alt="wheel"
+                  />
+                  <p>{product.name}&#8702;</p>
+                </div>
+              </Link>
             );
           })}
         </div>
