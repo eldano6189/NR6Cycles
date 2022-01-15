@@ -1,0 +1,25 @@
+.container-progress {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-progress:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color3);
+}
+
+.progress-box {
+  background-color: var(--font-color2);
+  width: 25px;
+  height: 6px;
+  margin-right: 10px;
+  transform: skew(-30deg, 0deg);
+}

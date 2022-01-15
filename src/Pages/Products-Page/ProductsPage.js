@@ -1,4 +1,5 @@
 import React from "react";
+import ProgressBar from "../../Components/Progress-Bar/ProgressBar";
 import { IntLink } from "../../Components/Buttons/Buttons";
 import { useLocation } from "react-router-dom";
 import "./ProductsPage.css";
@@ -11,7 +12,7 @@ export default function ProductsPage() {
       <div className="products-title">
         <h1>{location.state[0].type}</h1>
       </div>
-      <ul>
+      <ul className="container-product-option">
         {location.state.map((product) => {
           return (
             <li className="products-option" key={product.id}>
@@ -25,6 +26,7 @@ export default function ProductsPage() {
                   <div>
                     <p>{product.price}</p>
                     <p>{product.custReview}</p>
+                    <ProgressBar />
                   </div>
                 </div>
                 <div className="products-option-img">
