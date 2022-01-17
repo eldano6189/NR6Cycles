@@ -31,7 +31,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="products-option-img">
                   <img
-                    src={require("../../Assets/Images/temp.jpg")}
+                    src={require(`../../Assets/Images/Products/${product.mainImg}`)}
                     alt="Wheel showcase"
                   />
                 </div>
