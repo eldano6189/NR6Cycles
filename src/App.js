@@ -14,26 +14,23 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <main>
-        <ScrollTop>
-          <TransitionGroup>
-            <CSSTransition
-              key={location.key}
-              timeout={300}
-              classNames="page"
-              unmountOnExit
-            >
+      <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          timeout={1000}
+          classNames="page"
+          unmountOnExit
+        >
+          <main>
+            <ScrollTop>
               <Routes>
                 <Route exact path="/" element={<LandingPage />} />
-                <Route
-                  path="/products"
-                  element={<ProductsPage authed={true} />}
-                />
+                <Route path="/products" element={<ProductsPage />} />
               </Routes>
-            </CSSTransition>
-          </TransitionGroup>
-        </ScrollTop>
-      </main>
+            </ScrollTop>
+          </main>
+        </CSSTransition>
+      </TransitionGroup>
       <Footer />
     </div>
   );
