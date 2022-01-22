@@ -1,47 +1,23 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Products } from "../../Data/Navigation/Products";
-import { Storey } from "../../Data/Navigation/Storey";
 import { Support } from "../../Data/Navigation/Support";
 import "./Header.css";
 
 export default function Header() {
-  const [productDD, setProductDD] = useState(false);
-  const [storeyDD, setStoreyDD] = useState(false);
   const [supportDD, setSupportDD] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
-  const [storeyOpen, setStoreyOpen] = useState(false);
   const [supportOpen, setSupportOpen] = useState(false);
 
-  const productHandler = () => {
-    setProductDD(true);
-    setStoreyDD(false);
-    setSupportDD(false);
-  };
-
-  const storeyHandler = () => {
-    setProductDD(false);
-    setStoreyDD(true);
-    setSupportDD(false);
-  };
-
   const supportHandler = () => {
-    setProductDD(false);
-    setStoreyDD(false);
     setSupportDD(true);
   };
 
   const clearLinkHandler = () => {
-    setProductDD(false);
-    setStoreyDD(false);
     setSupportDD(false);
   };
 
   const navOpenHandler = () => {
     setNavOpen(!navOpen);
-    setProductsOpen(false);
-    setStoreyOpen(false);
     setSupportOpen(false);
   };
 
@@ -61,12 +37,12 @@ export default function Header() {
 
           <li className="container-nav">
             <nav>
-              <p onMouseEnter={productHandler} onMouseOut={clearLinkHandler}>
-                PRODUCTS
-              </p>
-              <p onMouseEnter={storeyHandler} onMouseOut={clearLinkHandler}>
-                STOREY
-              </p>
+              <Link to="/products">
+                <p>PRODUCTS</p>
+              </Link>
+              <Link to="/storey">
+                <p>STOREY</p>
+              </Link>
               <p onMouseEnter={supportHandler} onMouseOut={clearLinkHandler}>
                 SUPPORT
               </p>
@@ -81,61 +57,6 @@ export default function Header() {
           </li>
         </ul>
       </header>
-
-      <div
-        onMouseOver={productHandler}
-        onMouseOut={clearLinkHandler}
-        className={
-          productDD
-            ? "container-product-dropdown open-dd"
-            : "container-product-dropdown"
-        }
-      >
-        <div className="container-product-links">
-          {Products.map((product) => {
-            return (
-              <Link
-                key={product.name}
-                to={product.link}
-                state={product.passInfo}
-                onClick={clearLinkHandler}
-              >
-                <div className="product-link">
-                  <img
-                    src={require(`../../Assets/Images/Navigation/${product.img}`)}
-                    alt="wheel"
-                  />
-                  <p>{product.name}&#8702;</p>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-
-      <div
-        onMouseOver={storeyHandler}
-        onMouseOut={clearLinkHandler}
-        className={
-          storeyDD
-            ? "container-storey-dropdown open-dd"
-            : "container-storey-dropdown"
-        }
-      >
-        <div className="container-storey-links">
-          {Storey.map((storey) => {
-            return (
-              <div className="storey-link" key={storey.name}>
-                <img
-                  src={require(`../../Assets/Images/Navigation/${storey.img}`)}
-                  alt="wheel"
-                />
-                <p>{storey.name} &#8702;</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       <div
         onMouseOver={supportHandler}
@@ -163,19 +84,23 @@ export default function Header() {
         }
       >
         <ul>
-          <li onClick={() => setProductsOpen(!productsOpen)}>
-            <p>PRODUCTS</p>
-            <div className="mobile-arrow">
-              <span></span>
-              <span></span>
-            </div>
+          <li onClick={navOpenHandler}>
+            <Link to="/products">
+              <p>PRODUCTS</p>
+              <div className="mobile-arrow">
+                <span></span>
+                <span></span>
+              </div>
+            </Link>
           </li>
-          <li onClick={() => setStoreyOpen(!storeyOpen)}>
-            <p>STOREY</p>
-            <div className="mobile-arrow">
-              <span></span>
-              <span></span>
-            </div>
+          <li onClick={navOpenHandler}>
+            <Link to="/storey">
+              <p>STOREY</p>
+              <div className="mobile-arrow">
+                <span></span>
+                <span></span>
+              </div>
+            </Link>
           </li>
           <li onClick={() => setSupportOpen(!supportOpen)}>
             <p>SUPPORT</p>
@@ -185,52 +110,6 @@ export default function Header() {
             </div>
           </li>
         </ul>
-        <div
-          className={
-            productsOpen ? "mobile-products open-products" : "mobile-products"
-          }
-        >
-          <div className="menu-bk-btn" onClick={() => setProductsOpen(false)}>
-            <p>BACK</p>
-          </div>
-          {Products.map((product) => {
-            return (
-              <Link
-                key={product.name}
-                to={product.link}
-                state={product.passInfo}
-                onClick={navOpenHandler}
-              >
-                <div className="product-link">
-                  <img
-                    src={require(`../../Assets/Images/Navigation/${product.img}`)}
-                    alt="wheel"
-                  />
-                  <p>{product.name}&#8702;</p>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
-        <div
-          className={storeyOpen ? "mobile-storey open-storey" : "mobile-storey"}
-        >
-          <div className="menu-bk-btn" onClick={() => setStoreyOpen(false)}>
-            <p>BACK</p>
-          </div>
-          {Storey.map((storey) => {
-            return (
-              <div className="storey-link" key={storey.name}>
-                <img
-                  src={require(`../../Assets/Images/Navigation/${storey.img}`)}
-                  alt="wheel"
-                />
-                <p>{storey.name} &#8702;</p>
-              </div>
-            );
-          })}
-        </div>
 
         <div
           className={

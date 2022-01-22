@@ -1,0 +1,19 @@
+.container-no-product {
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-no-product h5 {
+  font-size: max(22px, 2vw);
+}
+
+.container-no-product p {
+  font-size: max(14px, 1.4vw);
+  color: var(--font-color2);
+  text-align: center;
+}

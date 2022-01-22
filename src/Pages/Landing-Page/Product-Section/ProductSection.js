@@ -1,27 +1,25 @@
 import React from "react";
 import "./ProductSection.css";
-import { Products } from "../../../Data/Navigation/Products";
+import { Products } from "../../../Data/Products/Products";
 import { Link } from "react-router-dom";
 
 export default function ProductSection() {
+  const RecentProducts = Products.slice(Math.max(Products.length - 4, 0));
+
   return (
     <section className="container-product-section">
       <div className="container-product-title">
-        <h2>SHOP NOW</h2>
+        <h2>RECENT PRODUCTS</h2>
       </div>
       <div className="container-product-options">
         <ul>
-          {Products.map((product) => {
+          {RecentProducts.map((product) => {
             return (
-              <Link
-                key={product.name}
-                to={product.link}
-                state={product.passInfo}
-              >
+              <Link key={product.id} to="/products">
                 <li>
                   <div className="product-image-wrapper">
                     <img
-                      src={require(`../../../Assets/Images/Navigation/${product.img}`)}
+                      src={require(`../../../Assets/Images/Products/${product.imgs[0]}`)}
                       alt="wheel"
                     />
                   </div>

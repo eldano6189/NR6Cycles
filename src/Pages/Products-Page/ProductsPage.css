@@ -15,16 +15,13 @@
 .products-search input {
   padding: 6px;
   font-size: max(14px, 1vw);
-  transform: translateX(-38px);
+  transform: translateX(-10px);
+  border: 2px solid var(--font-color1);
 }
 
 .products-search svg {
-  transform: scale(0.8) translateX(-38px);
+  transform: scale(0.8) translateX(-12px);
 }
-
-/* .products-search > * {
-  transform: translateX(-48px);
-} */
 
 .container-product-option {
   width: 100%;

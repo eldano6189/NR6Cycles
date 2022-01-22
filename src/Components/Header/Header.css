@@ -131,8 +131,6 @@ nav p {
   background-color: var(--color1);
 }
 
-.container-product-dropdown,
-.container-storey-dropdown,
 .container-support-dropdown {
   position: absolute;
   top: 100px;
@@ -151,8 +149,6 @@ nav p {
   box-shadow: var(--shadow);
 }
 
-.container-product-links,
-.container-storey-links,
 .container-support-links {
   width: 100%;
   height: 100%;
@@ -257,6 +253,14 @@ nav p {
   font-size: var(--fontsize-subheader);
   font-weight: bold;
   cursor: pointer;
+}
+
+.container-mobile-nav li a {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container-mobile-nav li > * {

@@ -19,7 +19,11 @@
 .progress-box {
   background-color: var(--font-color2);
   width: 25px;
-  height: 6px;
+  height: 8px;
   margin-right: 5px;
   transform: skew(-30deg, 0deg);
+}
+
+.progress {
+  background-color: var(--color4);
 }
