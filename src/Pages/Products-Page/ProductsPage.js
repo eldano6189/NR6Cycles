@@ -30,11 +30,13 @@ export default function ProductsPage() {
                   <div>
                     <h2>{product.name}</h2>
                     <p>{product.slogan}</p>
-                    <IntLink href={product.link}>View Wheelset</IntLink>
+                    <IntLink href={`/products/${product.link}`}>
+                      View Wheelset
+                    </IntLink>
                   </div>
                   <div>
                     <p>{product.price}</p>
-                    <p>{product.inStock ? "In Stock" : "Out of Stock"}</p>
+                    <p>Custom Built to Order</p>
                     <ProgressBar
                       rev={product.reviews.score}
                       total={product.reviews.total}

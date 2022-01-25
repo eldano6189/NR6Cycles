@@ -1,6 +1,7 @@
 import React from "react";
 import Facebook from "../../Assets/SVG/Facebook";
 import Instagram from "../../Assets/SVG/Instagram";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
@@ -17,25 +18,21 @@ export default function Footer() {
         <ul>
           <li>
             <p>PRODUCTS</p>
-            <a href="/">RACE</a>
-            <a href="/">PERFORMANCE</a>
-            <a href="/">MTB</a>
-            <a href="/">GRAVEL</a>
-            <a href="/">CYCLE X</a>
-            <a href="/">TRACK</a>
+            <Link to="/products">RACE</Link>
+            <Link to="/products">PERFORMANCE</Link>
+            <Link to="/products">MTB</Link>
+            <Link to="/products">GRAVEL</Link>
           </li>
           <li>
             <p>STOREY</p>
-            <a href="/">OUR PROMISE</a>
-            <a href="/">OUR PEOPLE</a>
-            <a href="/">OUR PROCESS</a>
+            <Link to="/storey">OUR PEOPLE</Link>
           </li>
           <li>
             <p>SUPPORT</p>
-            <a href="/">RETURNS</a>
-            <a href="/">FAQ</a>
-            <a href="/">WARRENTY</a>
-            <a href="/">CONTACT US</a>
+            <Link to="/">RETURNS</Link>
+            <Link to="/">FAQ</Link>
+            <Link to="/">WARRENTY</Link>
+            <Link to="/">CONTACT US</Link>
           </li>
           <li>
             <p>FOLLOW US</p>
