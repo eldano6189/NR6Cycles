@@ -8,7 +8,7 @@ export default function ProductSection() {
 
   return (
     <section className="container-product-section">
-      <div className="container-product-title">
+      <div className="container-products-title">
         <h2>RECENT PRODUCTS</h2>
       </div>
       <div className="container-product-options">

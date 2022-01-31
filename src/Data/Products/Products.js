@@ -6,12 +6,11 @@ export const Products = [
     slogan: "Damper the tough terrain",
     link: "NR6RacewheelDiscBrake",
     price: "Prices from £1300",
-    mainImg: "Race/RaceMain.jpg",
+    mainImg: "Race/Rim/RaceMain.jpg",
     reviews: {
       total: 4,
       score: 4,
     },
-
     keyword:
       "Race Extralite hubs british design super lightweight ABEC 5 Bearings Hill climbing tubeless carbon",
     briefDesc:
@@ -29,7 +28,13 @@ export const Products = [
           "Full tubeless rim, Tubular rim, Brass nipples, Coloured Nipples.",
       },
     ],
-    imgs: ["Race/img01.jpg"],
+    imgs: [
+      "Race/Rim/img1.jpg",
+      "Race/Rim/img2.jpg",
+      "Race/Rim/img3.jpg",
+      "Race/Rim/img4.jpg",
+      "Race/Rim/img5.jpg",
+    ],
   },
   {
     id: 2,
@@ -38,12 +43,11 @@ export const Products = [
     slogan: "Damper the tough terrain",
     link: "NR6RacewheelRimBrake",
     price: "Prices from £1250",
-    mainImg: "Race/RaceMain.jpg",
+    mainImg: "Race/Rim/RaceMain.jpg",
     reviews: {
       total: 3,
       score: 5,
     },
-
     keyword:
       "Race Extralite hubs british design super lightweight ABEC 5 Bearings Hill climbing tubeless carbon",
     briefDesc:
@@ -61,7 +65,13 @@ export const Products = [
           "Full tubeless rim, Tubular rim, Brass nipples, Coloured Nipples.",
       },
     ],
-    imgs: ["Race/img01.jpg"],
+    imgs: [
+      "Race/Rim/img1.jpg",
+      "Race/Rim/img2.jpg",
+      "Race/Rim/img3.jpg",
+      "Race/Rim/img4.jpg",
+      "Race/Rim/img5.jpg",
+    ],
   },
   {
     id: 3,
@@ -70,12 +80,11 @@ export const Products = [
     slogan: "Damper the tough terrain",
     link: "NR6PerformanceDiscBrake",
     price: "Prices from £645",
-    mainImg: "Performance/PerformanceMain.jpg",
+    mainImg: "Performance/Disc/PerformanceMain.jpg",
     reviews: {
       total: 4,
       score: 4,
     },
-
     keyword:
       "Performance 50mm UCI approved carbon wheelset british design custom-made strong aero centerlock disc",
     briefDesc:
@@ -93,7 +102,13 @@ export const Products = [
           "Full tubeless rim, Tubular rim, Brass nipples, Coloured Nipples.",
       },
     ],
-    imgs: ["Performance/img01.jpg"],
+    imgs: [
+      "Performance/Disc/img1.jpg",
+      "Performance/Disc/img2.jpg",
+      "Performance/Disc/img3.jpg",
+      "Performance/Disc/img4.jpg",
+      "Performance/Disc/img5.jpg",
+    ],
   },
   {
     id: 4,
@@ -102,12 +117,11 @@ export const Products = [
     slogan: "Damper the tough terrain",
     link: "NR6PerformanceRimBrake",
     price: "Prices from £635",
-    mainImg: "Performance/PerformanceMain.jpg",
+    mainImg: "Performance/Rim/PerformanceMain.jpg",
     reviews: {
       total: 2,
       score: 4,
     },
-
     keyword:
       "Performance 50mm 80mm carbon wheelset british design custom-made strong aero tubeless ceramic bearings lightweight     UCI approved",
 
@@ -126,7 +140,13 @@ export const Products = [
           " Full tubeless rim, Tubular rim, Brass nipples, Coloured Nipples.",
       },
     ],
-    imgs: ["Performance/img01.jpg"],
+    imgs: [
+      "Performance/Rim/img1.jpg",
+      "Performance/Rim/img2.jpg",
+      "Performance/Rim/img3.jpg",
+      "Performance/Rim/img4.jpg",
+      "Performance/Rim/img5.jpg",
+    ],
   },
   {
     id: 5,
@@ -140,7 +160,6 @@ export const Products = [
       total: 10,
       score: 4,
     },
-
     keyword:
       "MTB mountain Hockless enduro trails bike park XC customised colours lightweight strong 29er 650b 27.5",
 
@@ -158,7 +177,13 @@ export const Products = [
         extras: "Full tubeless rim, Brass nipples, Coloured Nipples.",
       },
     ],
-    imgs: ["MTB/img01.jpg"],
+    imgs: [
+      "MTB/img1.jpg",
+      "MTB/img2.jpg",
+      "MTB/img3.jpg",
+      "MTB/img4.jpg",
+      "MTB/img5.jpg",
+    ],
   },
   {
     id: 6,
@@ -172,7 +197,6 @@ export const Products = [
       total: 2,
       score: 5,
     },
-
     keyword:
       "Gravel road hookless rim wider rim through axle quick release carbon wheelset centerlock 6 bolt disc british design      strong 700cc",
 
@@ -191,6 +215,12 @@ export const Products = [
           "Coloured Nipples, Coloured tubeless valves, Tubeless tyres and Tubeless slime.",
       },
     ],
-    imgs: ["Gravel/img01.jpg"],
+    imgs: [
+      "Gravel/img1.jpg",
+      "Gravel/img2.jpg",
+      "Gravel/img3.jpg",
+      "Gravel/img4.jpg",
+      "Gravel/img5.jpg",
+    ],
   },
 ];

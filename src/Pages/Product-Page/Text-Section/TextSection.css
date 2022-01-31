@@ -1,0 +1,15 @@
+.container-prod-text {
+  width: 100%;
+  height: auto;
+  padding: 4vw 6vw;
+  background-color: var(--color3);
+}
+
+.container-prod-text h3 {
+  padding-bottom: 20px;
+  font-size: max(14px, 1.2vw);
+}
+
+.container-prod-text p {
+  font-size: max(14px, 1.05vw);
+}

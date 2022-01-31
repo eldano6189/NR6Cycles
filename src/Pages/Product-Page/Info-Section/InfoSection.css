@@ -1,0 +1,24 @@
+.container-product-info-section {
+  width: 100%;
+  height: auto;
+  padding: 4vw 6vw;
+}
+
+.container-product-info-section ul {
+  width: 100%;
+  height: auto;
+}
+
+.container-product-info-section ul li {
+  padding: 1vw 0;
+}
+
+.container-product-info-section h4,
+.container-product-info-section h5 {
+  font-size: max(14px, 1.2vw);
+  padding-bottom: 1vw;
+}
+
+.container-product-info-section p {
+  font-size: max(14px, 1.05vw);
+}

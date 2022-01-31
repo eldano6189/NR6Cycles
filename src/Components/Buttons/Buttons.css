@@ -9,7 +9,7 @@
   color: var(--font-color1);
   text-align: center;
   background-color: var(--color4);
-  font-size: clamp(1rem, 0.8vw, 2rem);
+  font-size: clamp(0.8rem, 0.7vw, 1.8rem);
   text-transform: uppercase;
   white-space: nowrap;
 }

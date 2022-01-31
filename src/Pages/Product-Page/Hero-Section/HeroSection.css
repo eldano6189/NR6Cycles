@@ -1,0 +1,148 @@
+.container-product-hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 6vw;
+}
+
+.container-product-images {
+  grid-column: 1 / 9;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.container-product-multi-images {
+  grid-column: 1 / 3;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-product-multi-images ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.container-product-multi-images li {
+  width: 60%;
+  padding-top: 60%;
+  position: relative;
+  cursor: pointer;
+}
+
+.container-product-multi-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.container-product-main-image {
+  grid-column: 3 / 9;
+  padding: 2vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-product-main-image-wrapper {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.container-product-main-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-product-text {
+  grid-column: 9 / 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-product-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 4px solid var(--color3);
+}
+
+.container-product-title h1 {
+  font-size: max(20px, 2.4vw);
+}
+
+.container-product-title h2 {
+  font-size: max(14px, 1.4vw);
+  font-weight: 400;
+}
+
+.container-product-config {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.container-product-config p {
+  padding-right: 20px;
+  font-size: max(12px, 1.2vw);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-product-images {
+    grid-column: 1 / 13;
+  }
+
+  .container-product-text {
+    grid-column: 1 / 13;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container-product-hero {
+    padding: 6vw 0;
+  }
+
+  .container-product-multi-images {
+    grid-column: 1 / 9;
+    grid-row: 2 / 3;
+  }
+
+  .container-product-multi-images ul {
+    flex-direction: row;
+  }
+
+  .container-product-multi-images ul li {
+    width: 20%;
+    padding-top: 20%;
+  }
+
+  .container-product-main-image {
+    grid-column: 1 / 9;
+  }
+}
