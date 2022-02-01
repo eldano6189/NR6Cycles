@@ -24,8 +24,8 @@ export default function Footer() {
             <Link to="/products">GRAVEL</Link>
           </li>
           <li>
-            <p>STOREY</p>
-            <Link to="/storey">OUR PEOPLE</Link>
+            <p>STORY</p>
+            <Link to="/story">OUR STORY</Link>
           </li>
           <li>
             <p>SUPPORT</p>

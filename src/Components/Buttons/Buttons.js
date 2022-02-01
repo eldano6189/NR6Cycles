@@ -8,7 +8,12 @@ export function Button({ children }) {
 
 export function ExtLink({ children, href }) {
   return (
-    <a href={href} className="container-button">
+    <a
+      href={href}
+      className="container-button"
+      target="_blank"
+      rel="noreferrer"
+    >
       {children}
     </a>
   );
@@ -19,5 +24,13 @@ export function IntLink({ children, href }) {
     <Link to={href} className="container-button">
       {children}
     </Link>
+  );
+}
+
+export function Anchor({ children, href }) {
+  return (
+    <a href={href} className="container-button">
+      {children}
+    </a>
   );
 }

@@ -1,15 +1,45 @@
 .container-button {
+  position: relative;
   outline: none;
   cursor: pointer;
   display: inline-block;
-  padding: 0.4em 1.4em;
-  border: 0.1em solid var(--color4);
+  padding: 0.5em 1.5em;
   margin: 0 0.3em 0.3em 0;
   text-decoration: none;
   color: var(--font-color1);
   text-align: center;
   background-color: var(--color4);
   font-size: clamp(0.8rem, 0.7vw, 1.8rem);
+  font-weight: 600;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: none;
+}
+
+.container-button:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Lets Go";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--font-color1);
+  color: var(--color4);
+  opacity: 0;
+  transform: translateX(-101%);
+  transition: all 0.3s ease;
+}
+
+.container-button:hover {
+  background-color: transparent;
+}
+
+.container-button:hover:after {
+  transform: translateX(0%);
+  opacity: 1;
 }

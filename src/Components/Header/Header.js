@@ -40,8 +40,8 @@ export default function Header() {
               <Link to="/products">
                 <p>PRODUCTS</p>
               </Link>
-              <Link to="/storey">
-                <p>STOREY</p>
+              <Link to="/story">
+                <p>STORY</p>
               </Link>
               <p onMouseEnter={supportHandler} onMouseOut={clearLinkHandler}>
                 SUPPORT
@@ -94,8 +94,8 @@ export default function Header() {
             </Link>
           </li>
           <li onClick={navOpenHandler}>
-            <Link to="/storey">
-              <p>STOREY</p>
+            <Link to="/story">
+              <p>STORY</p>
               <div className="mobile-arrow">
                 <span></span>
                 <span></span>

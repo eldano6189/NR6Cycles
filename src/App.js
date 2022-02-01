@@ -8,6 +8,8 @@ import Header from "./Components/Header/Header";
 import LandingPage from "./Pages/Landing-Page/LandingPage";
 import ProductsPage from "./Pages/Products-Page/ProductsPage";
 import ProductPage from "./Pages/Product-Page/ProductPage";
+import StoryPage from "./Pages/Story-Page/StoryPage";
+import ContactPage from "./Pages/Contact-Page/ContactPage";
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
                 />
               );
             })}
+            <Route path="/story" element={<StoryPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </ScrollTop>
       </main>

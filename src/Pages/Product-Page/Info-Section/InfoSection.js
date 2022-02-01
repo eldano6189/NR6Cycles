@@ -1,9 +1,8 @@
 import "./InfoSection.css";
 
 export default function InfoSection({ product }) {
-  console.log(product);
   return (
-    <section className="container-product-info-section">
+    <section className="container-product-info-section" id="Test">
       <h4>KEY FEATURES</h4>
       <ul>
         <li>

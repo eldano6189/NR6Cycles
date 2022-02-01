@@ -58,7 +58,7 @@ export default function HeroSection() {
                 <div className="container-slide-text">
                   <h3>{slide.title}</h3>
                   <p>{slide.desc}</p>
-                  <ExtLink href="/">READ MORE</ExtLink>
+                  <ExtLink href={slide.link}>READ MORE</ExtLink>
                 </div>
               </div>
             );
