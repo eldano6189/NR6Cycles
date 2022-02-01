@@ -7,7 +7,12 @@ export default function ContactPage() {
         <h1>CONTACT US</h1>
       </div>
       <div className="container-contact-form">
-        <form name="contact" method="post">
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          onSubmit="submit"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
