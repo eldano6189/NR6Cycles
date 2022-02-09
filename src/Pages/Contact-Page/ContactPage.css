@@ -1,0 +1,43 @@
+.container-contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-contact-header {
+  padding: 2em 0;
+}
+
+.container-contact-form {
+  width: max(500px, 40vw);
+}
+
+.container-contact-form form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+
+.container-contact-form input,
+.container-contact-form textarea {
+  margin: 0.2em 0;
+  padding: 0.5em;
+  resize: none;
+  font-size: max(14px, 1vw);
+  width: 100%;
+}
+
+.container-contact-form textarea {
+  height: 10vw;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 520px) {
+  .container-contact-form {
+    width: 100%;
+  }
+}

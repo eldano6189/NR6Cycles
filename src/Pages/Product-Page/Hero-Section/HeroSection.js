@@ -46,7 +46,9 @@ export default function HeroSection({ product }) {
         </div>
         <div className="container-product-config">
           <p>{product.price}</p>
-          <IntLink href="/contact">ENQUIRE</IntLink>
+          <IntLink props={product} href="/contact">
+            ENQUIRE
+          </IntLink>
         </div>
       </div>
     </div>

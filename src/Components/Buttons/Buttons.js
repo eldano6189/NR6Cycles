@@ -2,8 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Buttons.css";
 
-export function Button({ children }) {
-  return <button className="container-button">{children}</button>;
+export function Button({ children, type }) {
+  return (
+    <button type={type} className="container-button">
+      {children}
+    </button>
+  );
 }
 
 export function ExtLink({ children, href }) {
@@ -19,9 +23,9 @@ export function ExtLink({ children, href }) {
   );
 }
 
-export function IntLink({ children, href }) {
+export function IntLink({ children, href, props }) {
   return (
-    <Link to={href} className="container-button">
+    <Link to={href} state={props} className="container-button">
       {children}
     </Link>
   );

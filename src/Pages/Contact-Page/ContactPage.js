@@ -1,6 +1,11 @@
 import "./ContactPage.css";
+import { Button } from "../../Components/Buttons/Buttons";
+import { useLocation } from "react-router-dom";
 
 export default function ContactPage() {
+  const location = useLocation();
+  const subject = location.state;
+
   return (
     <div className="container-contact-page">
       <div className="container-contact-header">
@@ -14,24 +19,17 @@ export default function ContactPage() {
           onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email*" required />
+          <input
+            type="text"
+            name="wheelset"
+            placeholder="Wheelset*"
+            defaultValue={subject === null ? "" : subject.name}
+            required
+          />
+          <textarea name="message" placeholder="Message*" required />
+          <Button type="submit">Send</Button>
         </form>
       </div>
     </div>

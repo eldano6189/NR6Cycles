@@ -31,7 +31,7 @@ export default function App() {
               );
             })}
             <Route path="/story" element={<StoryPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contact" element={<ContactPage authed={true} />} />
           </Routes>
         </ScrollTop>
       </main>
