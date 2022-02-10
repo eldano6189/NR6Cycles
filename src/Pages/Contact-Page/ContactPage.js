@@ -30,8 +30,8 @@ export default function ContactPage() {
           <input type="email" name="email" placeholder="Email*" required />
           <input
             type="text"
-            name="wheelset"
-            placeholder="Wheelset*"
+            name="subject"
+            placeholder="Subject*"
             defaultValue={subject === null ? "" : subject.name}
             required
           />
