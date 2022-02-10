@@ -11,6 +11,13 @@ export default function ContactPage() {
       <div className="container-contact-header">
         <h1>CONTACT US</h1>
       </div>
+      <div className="container-contact-header">
+        <p>
+          If you have any queries dont hesitate to contact on the form below,
+          <br />
+          our team will be happy to help
+        </p>
+      </div>
       <div className="container-contact-form">
         <form
           name="contact"

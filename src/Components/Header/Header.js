@@ -71,7 +71,9 @@ export default function Header() {
           {Support.map((support) => {
             return (
               <div className="support-link" key={support.name}>
-                <p>{support.name} &#8702;</p>
+                <Link to={support.link}>
+                  <p>{support.name} &#8702;</p>
+                </Link>
               </div>
             );
           })}
@@ -121,8 +123,14 @@ export default function Header() {
           </div>
           {Support.map((support) => {
             return (
-              <div className="support-link" key={support.name}>
-                <p>{support.name} &#8702;</p>
+              <div
+                className="support-link"
+                key={support.name}
+                onClick={navOpenHandler}
+              >
+                <Link to={support.link}>
+                  <p>{support.name} &#8702;</p>
+                </Link>
               </div>
             );
           })}

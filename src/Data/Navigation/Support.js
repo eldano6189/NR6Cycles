@@ -13,6 +13,6 @@ export const Support = [
   },
   {
     name: "CONTACT",
-    link: "/",
+    link: "/contact",
   },
 ];

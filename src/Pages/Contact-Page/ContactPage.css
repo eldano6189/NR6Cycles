@@ -9,6 +9,15 @@
   padding: 2em 0;
 }
 
+.container-contact-header h1 {
+  font-size: max(20px, 2.4vw);
+}
+
+.container-contact-header p {
+  text-align: center;
+  font-size: max(14px, 1vw);
+}
+
 .container-contact-form {
   width: max(500px, 40vw);
 }

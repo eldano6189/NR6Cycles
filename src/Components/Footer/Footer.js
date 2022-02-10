@@ -32,7 +32,7 @@ export default function Footer() {
             <Link to="/">RETURNS</Link>
             <Link to="/">FAQ</Link>
             <Link to="/">WARRENTY</Link>
-            <Link to="/">CONTACT US</Link>
+            <Link to="/contact">CONTACT US</Link>
           </li>
           <li>
             <p>FOLLOW US</p>
