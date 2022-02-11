@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProgressBar from "../../Components/Progress-Bar/ProgressBar";
+// import ProgressBar from "../../Components/Progress-Bar/ProgressBar";
 import Search from "../../Assets/SVG/Search";
 import NoProduct from "../../Components/No-Product/NoProduct";
 import { IntLink } from "../../Components/Buttons/Buttons";
