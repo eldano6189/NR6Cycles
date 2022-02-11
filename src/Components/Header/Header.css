@@ -65,12 +65,12 @@ nav p {
   cursor: pointer;
 }
 
-.container-logo p {
+/* .container-logo p {
   font-weight: 800;
   font-style: italic;
   font-size: 1.8rem;
   transform: scale(1, 0.8);
-}
+} */
 
 .container-hamburger {
   display: flex;

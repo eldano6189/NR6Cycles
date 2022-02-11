@@ -15,7 +15,7 @@ export default function ProductSection() {
         <ul>
           {RecentProducts.map((product) => {
             return (
-              <Link key={product.id} to="/products">
+              <Link key={product.id} to={`/products/${product.link}`}>
                 <li>
                   <div className="product-image-wrapper">
                     <img

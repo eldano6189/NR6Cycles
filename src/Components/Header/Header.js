@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Logo } from "../../Assets/SVG/Logo";
 import { Support } from "../../Data/Navigation/Support";
 import "./Header.css";
 
@@ -31,7 +32,8 @@ export default function Header() {
         <ul>
           <li className="container-logo">
             <Link to="/">
-              <p>NR6CYCLES</p>
+              {/* <p>NR6CYCLES</p> */}
+              <Logo />
             </Link>
           </li>
 

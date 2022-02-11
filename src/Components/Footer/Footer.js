@@ -1,4 +1,5 @@
 import React from "react";
+import { Products } from "../../Data/Products/Products";
 import Facebook from "../../Assets/SVG/Facebook";
 import Instagram from "../../Assets/SVG/Instagram";
 import { Link } from "react-router-dom";
@@ -7,6 +8,13 @@ import "./Footer.css";
 export default function Footer() {
   const date = new Date();
   let year = date.getFullYear();
+
+  const removeDuplicates = [
+    ...Products.reduce(
+      (map, obj) => map.set(obj.type, obj),
+      new Map()
+    ).values(),
+  ];
 
   return (
     <footer>
@@ -18,10 +26,13 @@ export default function Footer() {
         <ul>
           <li>
             <p>PRODUCTS</p>
-            <Link to="/products">RACE</Link>
-            <Link to="/products">PERFORMANCE</Link>
-            <Link to="/products">MTB</Link>
-            <Link to="/products">GRAVEL</Link>
+            {removeDuplicates.map((product) => {
+              return (
+                <Link key={product.id} to="/products" state={product}>
+                  {product.type}
+                </Link>
+              );
+            })}
           </li>
           <li>
             <p>STORY</p>

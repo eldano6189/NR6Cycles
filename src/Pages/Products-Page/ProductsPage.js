@@ -1,23 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProgressBar from "../../Components/Progress-Bar/ProgressBar";
 import Search from "../../Assets/SVG/Search";
 import NoProduct from "../../Components/No-Product/NoProduct";
 import { IntLink } from "../../Components/Buttons/Buttons";
 import { Products } from "../../Data/Products/Products";
+import { useLocation } from "react-router-dom";
 import "./ProductsPage.css";
 
 export default function ProductsPage() {
+  const location = useLocation();
+  const props = location.state;
+
   const [search, setSearch] = useState("");
 
   const searchHandler = (e) => {
     setSearch(e.target.value.toLowerCase());
   };
 
+  useEffect(() => {
+    setSearch(props !== null ? props.type.toLowerCase() : "");
+  }, [props]);
+
   return (
     <div className="container-products">
       <div className="products-search">
         <Search />
-        <input type="text" placeholder="Search" onChange={searchHandler} />
+        <input
+          type="text"
+          placeholder="Search"
+          defaultValue={search}
+          onChange={searchHandler}
+        />
       </div>
       <ul className="container-product-option">
         {Products.filter((product) =>
