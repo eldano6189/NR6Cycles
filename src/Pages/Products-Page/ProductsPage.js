@@ -50,10 +50,10 @@ export default function ProductsPage() {
                   <div>
                     <p>{product.price}</p>
                     <p>Custom Built to Order</p>
-                    <ProgressBar
+                    {/* <ProgressBar
                       rev={product.reviews.score}
                       total={product.reviews.total}
-                    />
+                    /> */}
                   </div>
                 </div>
                 <div className="products-option-img">

@@ -14,7 +14,7 @@ export const Products = [
     keyword:
       "Race Extralite hubs british design super lightweight ABEC 5 Bearings Hill climbing tubeless carbon",
     briefDesc:
-      "The NR6 Race Rim brake wheelsets is a multi-discipline road race wheel. Built with an extra Lightweight hub from extra light paired with a set of with Abec 5 bearings make these wheels just as happy hill climbing as they are over the long distances of endurance racing. Although we do have some stock most of are wheels are made to order allowing the customer to choose their favourite logo colour and to mix and match front and rear wheel sizes.",
+      "The NR6 Race Disc brake wheelsets is a multi-discipline road race wheel. Built with an extra Lightweight hub from extra light paired with a set of with Abec 5 bearings make these wheels just as happy hill climbing as they are over the long distances of endurance racing. Although we do have some stock most of are wheels are made to order allowing the customer to choose their favourite logo colour and to mix and match front and rear wheel sizes.",
     features: [
       {
         rims: "T800/T1000 Carbon mix tubeless compatible with a 25mm external width rim to give extra strength and better Aero performance with tyre sizes 25-28mm.  These rims are available in 6 different finishes ,UD Matt, UD Gloss, Matt Marble, Gloss Marble, 3k Twill Matt and 3k Twill Gloss",

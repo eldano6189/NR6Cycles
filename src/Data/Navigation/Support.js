@@ -8,7 +8,7 @@ export const Support = [
     link: "/",
   },
   {
-    name: "WARRENTY",
+    name: "WARRANTY",
     link: "/",
   },
   {
