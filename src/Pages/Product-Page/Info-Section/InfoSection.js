@@ -34,7 +34,7 @@ export default function InfoSection({ product }) {
       ) : (
         <ul>
           {product.features.map((feature) => {
-            return <li>{feature}</li>;
+            return <li key={Math.random()}>{feature}</li>;
           })}
         </ul>
       )}
