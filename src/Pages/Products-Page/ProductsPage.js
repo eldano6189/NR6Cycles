@@ -44,7 +44,7 @@ export default function ProductsPage() {
                     <h2>{product.name}</h2>
                     <p>{product.slogan}</p>
                     <IntLink href={`/products/${product.link}`}>
-                      View Wheelset
+                      View Product
                     </IntLink>
                   </div>
                   <div>
@@ -63,7 +63,7 @@ export default function ProductsPage() {
                   />
                 </div>
                 <div className="products-option-text">
-                  <h3>Why this wheelset?</h3>
+                  <h3>Why this product?</h3>
                   <p>{product.briefDesc}</p>
                 </div>
               </div>

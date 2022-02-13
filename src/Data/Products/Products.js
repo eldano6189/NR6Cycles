@@ -223,4 +223,44 @@ export const Products = [
       "Gravel/img5.jpg",
     ],
   },
+  {
+    id: 7,
+    type: "Frame",
+    name: "NR6 Endurance Frame",
+    slogan: "Strong ass tubes",
+    link: "NR6EnduranceFrame",
+    price: "Prices from £1200",
+    mainImg: "EnduranceFrame/img2.jpeg",
+    reviews: {
+      total: 2,
+      score: 5,
+    },
+    keyword:
+      "frame Endurance titanium frameset carbonfibre disc brake rim brake geometry road bike",
+
+    briefDesc:
+      "Available in disc or rim brake versions. Built for the journey, the NR6 endurance frame was designed to cope with the demands of the Race Across America with its relaxed geometry and 3 bottle locations make this frameset perfect for the rider who enjoys those long days in the saddle. The mix of the titanium frame with carbon forks adds comfort, which is further enhanced by the use of the dropped seat stays to improve stability and stiffness, ideal for maximum power transfer on sprints and climbs. Complete bike builds avabile on request.",
+    features: [
+      "Designed and finished in Great Britain",
+      "Constructed from Grade 9 3AL 2.5V double-butted titanium tube set, with size specific tubing",
+      "T700/800 Full Carbon Fork",
+      "Tapered Headtube",
+      "Internal cable routing",
+      "Di2 compatible",
+      "Relax geometry",
+      "3 x water bottle holder locations",
+      "Dropped seat stays",
+      "Headset included",
+      "Available in Disc or Rim brake.",
+      "Engraved and Brushed with glass-beaded logos.",
+      "Custome logo design avabile.",
+    ],
+    imgs: [
+      "EnduranceFrame/img1.jpeg",
+      "EnduranceFrame/img2.jpeg",
+      "EnduranceFrame/img3.jpeg",
+      "EnduranceFrame/img4.jpeg",
+      "EnduranceFrame/img5.jpeg",
+    ],
+  },
 ];
