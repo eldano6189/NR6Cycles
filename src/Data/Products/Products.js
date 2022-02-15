@@ -230,7 +230,7 @@ export const Products = [
     slogan: "Eat up the miles",
     link: "NR6EnduranceFrame",
     price: "Prices from £1200",
-    mainImg: "EnduranceFrame/img2.jpeg",
+    mainImg: "EnduranceFrame/img5.jpeg",
     reviews: {
       total: 2,
       score: 5,
@@ -261,6 +261,47 @@ export const Products = [
       "EnduranceFrame/img3.jpeg",
       "EnduranceFrame/img4.jpeg",
       "EnduranceFrame/img5.jpeg",
+    ],
+  },
+  {
+    id: 8,
+    type: "Frame",
+    name: "NR6 N4S Road bike",
+    slogan: "Need for Speed",
+    link: "NR6N4SRoadbike",
+    price: "Prices from £1300",
+    mainImg: "RoadFrame/img5.jpeg",
+    reviews: {
+      total: 2,
+      score: 5,
+    },
+    keyword:
+      "Race lightweight fast titanium road road bike frameset disc brake rim brake frame",
+
+    briefDesc:
+      "Built with a more aggressive geometry than our endurance frame the NR6 N4S is designed with speed and efficiency in mind, with sharp stable handling the Nr6 N4S model guarantee the rider maximum performance at all times.",
+    features: [
+      "Designed and finished in Great Britain",
+      "Constructed from Grade 9 3AL 2.5V double-butted titanium tube set, with size specific tubing",
+      "Lightweight",
+      "T700/800 Full Carbon Fork",
+      "Smaller Tapered Headtube",
+      "Internal cable routing",
+      "Di2 compatible",
+      "Race geometry",
+      "2 x water bottle holder locations",
+      "Dropped seat stays",
+      "Headset included",
+      "Avabile in disc or Rim brake.",
+      "Engraved and Brushed with glass-beaded logos.",
+      "Custom logo design available.",
+    ],
+    imgs: [
+      "RoadFrame/img1.jpeg",
+      "RoadFrame/img2.jpeg",
+      "RoadFrame/img3.jpeg",
+      "RoadFrame/img4.jpeg",
+      "RoadFrame/img5.jpeg",
     ],
   },
 ];
