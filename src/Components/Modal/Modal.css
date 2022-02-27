@@ -1,0 +1,76 @@
+.container-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper {
+  position: relative;
+  width: 85%;
+  height: 85%;
+  background-color: var(--color2);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-btn:after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 60%;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.modal-close-btn:before {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 60%;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  overflow-y: scroll;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-content h1 {
+  color: var(--font-color1);
+  font-size: max(20px, 2.4vw);
+  padding: 2rem 0;
+}
+
+.modal-content p {
+  color: var(--font-color2);
+  font-size: max(12px, 1.2vw);
+  padding: 0.5rem 0;
+  font-weight: 400;
+}
