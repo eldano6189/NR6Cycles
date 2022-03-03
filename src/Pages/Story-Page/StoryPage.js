@@ -25,7 +25,7 @@ export default function StoryPage() {
         <p>
           Since Launching the company has grown from strength to strength and is
           now the company of choice for many high-end athletes and race teams
-          such as Saskia Tidey world and europen silver medallist, JRC Inteflon
+          such as Saskia Tidey world and european silver medallist, JRC Inteflon
           national cycling development team and members of the RAF Enduro team.
         </p>
       </div>

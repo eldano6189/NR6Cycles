@@ -14,13 +14,13 @@ export const Info = [
     id: 2,
     title: "WARRANTY",
     info: [
-      "At Nr6 We offer a comprehensive 2-year warranty on all Nr6 wheels and a 7 year warenty on all Nr6 Frames against manufacturing or building faults.",
+      "At Nr6 We offer a comprehensive 2-year warranty on all Nr6 wheels and a 7 year warranty on all Nr6 Frames against manufacturing or building faults.",
       "Goods found to have faults outside of normal wear and tear will be repaired or replaced The warranty period runs from the purchase date.",
       "The warranty is not applicable to products that have been incorrectly installed, adjusted, badly maintained or modified in anyway.",
       "The warranty is not applicable to damage caused by a crash, impact, or abuse of the product",
-      "The warranty is not applicable to normal wear and tear. These parts include (but are not limited to) bearings, spokes, nipples brake tracks, headset bearings and deralier hangers.",
+      "The warranty is not applicable to normal wear and tear. These parts include (but are not limited to) bearings, spokes, nipples brake tracks, headset bearings and derailer hangers.",
       "Please note we cannot accept responsibility for items lost in transit so we advise using a recorded method and may request proof of delivery. Refunds may take up to 30 days to process but we will always endeavour to process them as quickly as possible.",
-      "If you have any questions please dont hesitate to contact us.",
+      "If you have any questions please don't hesitate to contact us.",
     ],
   },
 ];

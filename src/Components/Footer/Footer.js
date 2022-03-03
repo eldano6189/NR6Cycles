@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Products } from "../../Data/Products/Products";
 import Facebook from "../../Assets/SVG/Facebook";
 import Instagram from "../../Assets/SVG/Instagram";
 import { Link } from "react-router-dom";
+import { Info } from "../../Data/Info/Info";
+import { Modal } from "../Modal/Modal";
 import "./Footer.css";
 
 export default function Footer() {
+  const [crashModal, setCrashModal] = useState(false);
+  const [warrentyModal, setWarrantyModal] = useState(false);
+
   const date = new Date();
   let year = date.getFullYear();
 
@@ -16,8 +21,18 @@ export default function Footer() {
     ).values(),
   ];
 
+  const crashHandler = () => {
+    setCrashModal(!crashModal);
+  };
+
+  const warrantyHandler = () => {
+    setWarrantyModal(!warrentyModal);
+  };
+
   return (
     <footer>
+      {crashModal ? <Modal state={crashHandler} props={Info[0]} /> : null}
+      {warrentyModal ? <Modal state={warrantyHandler} props={Info[1]} /> : null}
       <div className="container-footer">
         <div className="footer-logo">
           <h5>NR6CYCLES</h5>
@@ -40,9 +55,8 @@ export default function Footer() {
           </li>
           <li>
             <p>SUPPORT</p>
-            <Link to="/">RETURNS</Link>
-            <Link to="/">FAQ</Link>
-            <Link to="/">WARRENTY</Link>
+            <span onClick={crashHandler}>CRASH REPLACEMENT</span>
+            <span onClick={warrantyHandler}>WARRANTY</span>
             <Link to="/contact">CONTACT US</Link>
           </li>
           <li>

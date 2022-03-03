@@ -54,11 +54,13 @@ footer ul li p {
   font-size: max(14px, 0.8vw);
 }
 
-footer ul li a {
+footer ul li a,
+footer ul li span {
   font-weight: 500;
   font-size: max(14px, 0.8vw);
   color: var(--font-color2);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .container-social-links a {

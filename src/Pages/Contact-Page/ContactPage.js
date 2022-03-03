@@ -13,7 +13,7 @@ export default function ContactPage() {
       </div>
       <div className="container-contact-header">
         <p>
-          If you have any queries dont hesitate to contact on the form below,
+          If you have any queries don't hesitate to contact on the form below,
           <br />
           our team will be happy to help
         </p>

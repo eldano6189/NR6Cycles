@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Products } from "./Data/Products/Products";
@@ -12,6 +12,21 @@ import StoryPage from "./Pages/Story-Page/StoryPage";
 import ContactPage from "./Pages/Contact-Page/ContactPage";
 
 export default function App() {
+  useEffect(() => {
+    console.log(
+      "%cDesigned and built by Daniel Hall",
+      "color: red; font-size:18px; font-family: sans-serif;"
+    );
+    console.log(
+      "%cI love fresh ideas and help your vision become reality.",
+      "color: black; font-size:14px; font-family: sans-serif;"
+    );
+    console.log(
+      "%chttp://www.danielhall.co.uk",
+      "color: red; font-size:14px; font-family: sans-serif;"
+    );
+  }, []);
+
   return (
     <div className="App">
       <Header />
